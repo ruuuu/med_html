@@ -1,0 +1,657 @@
+body{/*Обычно браузеры добавляют небольшой отступ для всей страницы, чтобы контент не прилипал к краям. Этот отступ нам не нужен, так как в макете отступы будут в других контейнерах. Поэтому обнулим внешние и внутренние отступы у body.*/
+   padding: 0;
+   margin: 0;    
+   background-color: white; /*фоновый цвет*/   
+   font-size: 16px;  
+   line-height: 24px;/*межстроынй интервал*/ 
+   font-family: "Arial", sans-serif;
+   color: #404040; /*цвет еткста*/
+   min-width: 1280px;    
+}
+
+
+/*О  Б  Щ  И  Е   С Т  И  Л  И*/
+div{
+    display: block;
+}
+
+.title{
+    margin-bottom: 16px;
+}
+
+
+.phone{
+   font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.description{
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.abm-grey-text{
+    color: #8a959d; 
+}
+
+.abm-purple-text{
+    color:#10002b;
+}
+
+.abm-white-text{
+    color: white;
+}
+
+
+a{
+    text-decoration: none; /*убиарем подверкиванеи котрй ствит браузер по умолчанию*/
+}
+
+.abm-page-content {/*блок -центровщик*/
+    margin: 0 auto; /*содержимое будет в центре, центрируте содержимое*/
+    width: 1180px; /*ширина блока будет равна содержимому*/
+    padding: 0 20px;
+
+    
+}
+
+.content{ /*флекс-конетйнер*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* равномерное распределеие флекс элемнтов вдоль главной оси*/
+}
+
+/*стили для кнопок*/
+.btn{
+    display: inline-block; /*это лучше всего подходит для кнопок(чтобы их общая ширина формировалась за счёт текста и внутренних отступов. ), так как позволяет задавать внутренние отступы со всех сторон, ужимает элементы по ширине под содержание,теперь  лучше сразу явно пропишите ему вертикальное выравнивание, затем можно добавить кнопкам внутренние отступы и рамки*/
+    vertical-align: top; /*вертикальное выравнивание текста в кнопке*/
+    text-align: center; /*располодение текста в кнопке будет по центру*/
+    border: 2px solid #02b1a9;
+
+    padding: 7px 21px;
+    width: 148px;
+    word-wrap: break-word;
+    word-wrap: none;
+    border-radius: 4px;
+    background-color:   #02b1a9;
+    font-size: 14px;
+    color: white;
+    text-decoration: none; /*убираем подчеркивания, котрый ставит браузер по умолчанию*/
+   
+}
+
+.btn:hover{ /*при наведении на кнпоки */
+    color: #8d745a;
+}
+
+
+
+.btn:active{ /*при нажатии на кнопку*/
+    color: rgba(141, 116, 90, 0.3);
+}
+
+
+
+
+
+
+
+
+/*Ш  А   П   К   А*/
+
+.page-header{
+    background-color: white;
+    color:#10002b;
+    background-size: cover;/*изображению задаются минимально возможные размеры, при которых оно закроет всю фоновую область блока.*/
+    
+    min-height: 64px; /* надо задавать иначе высота ранва содержимому*/
+    border: 1px solid rgba(16, 0, 43, 0.12);
+}
+
+
+
+.header-logo{ /*смеащем лого . влево и флотнутым элментам всегда задаем размеры*/
+    float: left;/*лого к левом краю родителя(.container)*/
+    width: 21px; /*такая же ка и . у картникии самой*/
+    height: 20px; /*такая же как и картинки самой*/
+    margin-left:70px;
+    margin-top:10px;
+}
+
+
+.page-header .box_for_left_inf{
+    float:left;
+    /*border:1px solid black;*/
+    margin-top:10px;
+}
+
+.page-header .inf_about_phone{
+    width: 127px;
+    height: 22px;
+   
+    margin-left: 10px;
+    
+}
+
+
+.page-header .text{
+    width:208px;
+    height:18px;
+    font-size:12px;
+    color:grey;
+    padding-left: 10px;
+    margin-top: -6px;
+}
+
+
+
+.page-header .for_name{
+    float: right;
+    margin-right: 70px;
+    margin-top:22px;
+    margin-bottom:22px;
+}
+
+
+.cabinet-header{
+    padding: 12px 0;
+    border-bottom: 1px solid #e2e0e5;
+}
+
+
+.holder-content{ /*флекс-контейнер*/
+    display: flex;
+    align-items: center;/*распоолодение флекс элементов по центру поперечной оси(она удет сверху книз идти)*/
+    justify-content: space-between; /* равномерное раположение флекс элементов вдоль гланвой оси(она слева направо идет) */
+    
+}
+
+.part-left{
+    /*border:1px solid black;*/
+    padding-left: 40px;
+    background-image: url("img/headset.png");/*фоновое изображнние*/
+    background-repeat: no-repeat; /*фонове изоюажегие не повторяется*/
+    background-position:  left center; /*распододенеи изорадения*/
+    background-size: 30px; /*можно уменьшить размер изображения*/
+}
+
+.part-right{
+    /*border:1px solid black;*/
+    padding-right: 30px;
+    background-image:url("img/arr-down.svg");
+    background-repeat: no-repeat;
+    background-position:  right 10px center;
+    background-size: 10px;/*можно уменьшить размер изображения*/
+}
+
+
+
+
+
+
+
+/*Т Е Л О*/
+
+.app-content{
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column; /*напралвени главной оси  идет сверху вниз*/
+    flex-grow: 1;
+}
+
+
+
+.app-content .page-content{
+    padding-top: 20px;
+    padding-bottom: 37px;
+}
+
+
+.app-content .navbar-wrapper{
+    margin-bottom: 20px;
+}
+
+.app-content .cabinet-navbar{
+    color: black;
+    background-color: white;
+    border-radius: 8px;
+}
+
+
+
+
+
+
+.cabinet-navbar ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;/*убираем маркеры котрый ствит браузер по умолчанию*/
+   
+}
+
+
+.app-content .navbar-list{ /*флекс контенер*/
+    display: flex; /*элементы в нем будут флекс-элементами*/
+    align-items: center;/*выравниевание флекс элеметнов вдоль поперечсой оси по центрк*/
+    justify-content: space-around; /*делает арсстояние между флекс-элементами одинокове*/
+     
+}
+
+
+.navbar-list li.nav{ /*пункт меню*/
+     display: flex;/*флекс-элемент является сам флекс контенйером*/
+     align-items: center;/*выравниевание флекс элеметнов вдоль поперечсой оси по центрк*/
+     padding: 14px 0;
+     text-align: center;
+     justify-content: center; /**/
+     margin-bottom:2px; /*посомтреть если такое у  них*/
+}
+
+
+
+.nav_link{
+    font-size: 16px;
+}
+
+
+
+
+
+/*Т   Е   Л    О*/
+
+.layout{
+   display: flex;
+   align-items: flex-start; /*вертикальное  выранввание флекс элементов, вытсроятся в анчале попререной оси*/
+}
+
+
+
+.sidebar-wrapper{/*флекс -элемент(левое меню)*/
+   
+    
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 262px;/*ширина меню или три пункта мождно быо так напсиать flex: 0 0 262px;*/
+    margin-right: 54px;
+   
+}
+
+.cabinet-sidebar{
+    padding-left: 16px;
+    background-color: white;
+    border-radius: 8px;
+    
+}
+
+.cabinet-sidebar .item{
+    padding: 14px 0;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.layout .content{/*флекс -элемент*/
+    border-radius: 8px;
+    background-color: white;
+    width: 100%; /*ширина убдет аткой же к и  уродительского контенйера*/
+}
+
+
+.abm-lk-content{
+    padding:24px;
+}
+
+
+
+table{
+    /*border: 1px solid black;*/
+    display: table;
+    border-collapse: separate;
+    
+    table-layout: fixed;
+    border-spacing: 0 12px;
+    font-size: 16px;
+}
+
+.table1{
+    min-width: 600px;
+}
+
+.table2{
+    min-width: 450px;
+}
+
+tbody{
+    display: table-row-group;
+    vertical-align: middle;
+}
+
+tr{
+    display: table-row;
+}
+
+
+.abm-hr{ /*горзонтальная линия*/
+    border-top:1px solid rgba(0,0,0, .12)
+}
+
+.button-personal-data-get{
+    margin-top: 16px;
+}
+
+
+/*Б   А   Н   Н   Е   Р   Ы*/
+
+.cabinet-banners{
+   padding: 36px 0;
+   background-color: white;
+     
+}
+
+.cabinet-banners h2{
+    margin-top:0;
+    padding:0;
+    margin-left:-30px;
+    
+}
+
+.list{
+    width: 100%; /*ширина  у него будет как у родителськго контейнера*/
+    height: 156px;
+    overflow: hidden; /*иначе втрой скролл не убиерется*/
+    margin-top:0;
+    margin-left: 20px;
+}
+
+
+
+.horizontal_scroll{
+    width: 100%; /*ширина этого контейнера ранва ширине его род контейнера*/
+    position:relative; /*родителю задаем относительное позиционированеи, потмоку(arrow-wrapper) абостюлное, будет стрелку сдвигать*/
+    display:block;
+    /*border: 1px solid black;*/
+    
+}
+
+.scroll-wrapper{
+    height: 156px;
+    padding-top: 13px;
+    padding-bottom: 96px;
+    overflow-x: auto; /*добавляются  скролл  только при необходимости.*/
+    overflow-y:auto; /*вертиклаьный скролл /*добавляются  скролл  только при необходимости.*/
+}
+
+
+
+.banners-feed{
+    display: flex;
+    flex-direction: row; /*напралвение гланвой оси слева на право*/
+    flex-wrap: nowrap; /*если фекс эелменты не умещаются  водну сроку, то они перейдкт на след строку, но мы это запрещаетм*/
+    padding-right: 20px;
+    padding-left: 70px;
+}
+
+
+.banners-cards{
+    height: 156px;/*выоста карты*/
+    display: flex;
+    
+}
+
+.banners-cards a{
+   text-decoration:  none; /*подверкивания убираем у сслыок, ктыре ставит раузер по умолчанию*/
+   background: url("img/card.png") no-repeat;
+}
+
+
+.banners{
+    width: 310px;
+    margin-right: 20px;
+}
+
+.arrow-wrapper{/*для стрелки*/
+    position: absolute;/*потомоку азаде абсотлюное позиуионаиовнаие и сдвигаем относительно границ родителя(.horizontal_scroll)*/
+    top: 46px;
+    
+}
+
+.arrow-wrapper-left{
+    left: 96px;/*сдигаем кнопку на растсояние ранвое расстоняию от левого края родителя до левого края кнопки*/
+}
+
+
+.arrow-wrapper-right{
+    right: 144px; /*сдигаем кнопку на растсояние арнвое расстоняию от правого края родителя до проаго края кнопки*/
+}
+
+.abm_btn{
+    border:none;
+    background-color: transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 0;
+    text-decoration: none;
+    text-align: center;/*располложение текста на кнпоке*/
+    white-space: nowrap;/*нельяз переносить текст*/
+    background-repeat:   no-repeat;/*не повторять фонове изобраение*/
+}
+
+.abm-circle-arrow-btn{
+    width: 48px;/*размеры кружка(контейнер для стрелки)*/
+    height: 48px;
+    border: 2px solid #e2e0e5;/*чтобы сделать кружок,нам нужно  кдварату сделать border-radius*/
+    border-radius: 24px;
+    background: url("img/arrow-right.png") 50% 50%; /*стрелку располоагаем по центру кружка(контенйера) */
+    background-size: 36px; /*рамзер самой стрелки*/
+    background-color: white;
+}
+
+
+.arrow-wrapper-left  button{
+    transform: scaleX(-1); /*переворачинвате стрелку справа на лево*/
+}     
+
+ 
+
+
+/*П  О  Д  В  А  Л*/
+
+.cabient-footer.abm-purple-back{
+    background-color: #10002b;
+}
+
+.cabient-footer .block-up{/*верхняя часть подвала*/
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(255,255,255,.12);; /*горизонтальня черта*/
+}
+
+.abm-page-content .content{
+    display: flex;/*это будет флекс контейнером*/
+    align-items: center;/*выравниевание флекс элементво вдоль поперченой оси*/
+    justify-content: space-between;/*равномерное распределятся флекс -элементы*/
+    margin-left:-33px;
+}
+
+
+
+
+
+
+
+.socials{ /*конетнйер соц кнпокок*/
+    display: flex;/*флекс элемента сам является флекс контенйером*/
+   
+}
+
+.abm-social-link{
+    width: 48px;
+    height: 48px;
+    
+     margin-right: 12px;/*чтобы кнпоки соц сетей не слипались*/
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;/*фонове изобраение по центурк*/
+    transition: .7s all; /*меняет цвет при наведении через 0ю7 сек*/
+}
+
+.abm-social-link:nth-child(3){ /*у тертье с правойой строны маргин убираем*/
+   margin-right: 0; 
+}
+
+
+.abm-vk-link{
+    background-image: url("img/vknotdark.svg");
+}
+
+.abm-inst-link{
+    background-image: url("img/instdark.svg");
+}
+
+.abm-fb-link{
+    background-image: url("img/fbnotdark.svg");
+}
+
+
+a.abm-vk-link:hover{ /*при анведении на иконку на поментетяс*/
+    background-image: url("img/vk.png");
+}
+
+a.abm-inst-link:hover{
+    background-image: url("img/inst.png");
+}
+
+a.abm-fb-link:hover{
+     background-image: url("img/facebook.png");
+}
+
+
+
+
+.block-main{/*средняя часть подвала*/
+    padding: 24px 0;
+}
+
+
+.block-main .content{ /*контент средней части*/
+    align-items: flex-start;/* это свой-во переорпределим, распредление флес элементов вначале поперчной оси*/
+}
+
+
+
+.links-sites{ /*флекс элемент*/
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+}
+
+.link-site:first-child{
+    margin-right:76px;
+}
+
+.links-other{/*флекс-элмент сам вляется флекс конейнером*/
+    display: flex;
+    justify-content: flex-end;/*лементы арсполоагаются вкноце главной оси*/
+    width:56%; /*у  них 56 было*/
+    margin-left:0px;
+}
+
+.helpful{
+    /*border:1px solid black;*/
+    width: 60%;
+    margin-right: -120px;
+    
+}
+   
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;/*убираем марекеры у пунктно, котырй ставит сам ьраузер по умолчанию*/
+}
+
+li{
+    padding:0px;
+    margin-bottom:-15px;;
+}
+
+.helpful-link{
+    opacity: 0.7;
+}
+
+.abm-footer-link{
+    font-size: 14px;
+    margin:0;
+    padding: 0;
+    display: inline-block;
+}
+
+
+.contacts .contact{
+    max-width: 310px;
+    /*border: 1px solid black;*/
+    font-size: 14px;
+    line-height: 24px;
+    opacity: .7;
+}
+
+
+.contacts h5{
+    font-size: 14px;
+    color:white;
+}
+
+
+
+.mobile-apps{
+    display: flex;
+    margin-top: 26px;
+}
+
+.abm-app-link{
+    display: block;
+    margin-right: 15px;
+    border-radius:8px;
+    /*overflow: hidden;*/
+   
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.mobile-apps a.abm-app-link:hover{ /*при наведении на иконку она заменяится другим изображением*/
+     background-image: url("img/gp.png");
+}
+
+   
+
+
+
+.mobile-apps a.abm-app-link:last-child:hover{ /*при наведении на иконку она заменяится другим изображением*/
+    background-image: url("img/bitmap.png");
+}
+
+.abm-app-link img{
+    display: block; /*задаем чтобы пр наведении  на иконку не отображалась внизу тень черная */
+}
+
+.block-down{
+    padding:16px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    margin-top: -30px;
+}
+
+
+
+.block-down .lisense{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+
+
+
+
+.clearfix::after{ /*пседорасопрка для родилтеля флотнутых элменов*/
+  content: "";
+  display: table;
+  clear: both;    
+}

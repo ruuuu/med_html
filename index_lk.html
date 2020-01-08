@@ -1,0 +1,245 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>ABM</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      
+    <!--<div class="page-header clearfix"> <!-- ШПАПКА псевдораспорку задаем родителю флотнутых элементов, иначе флотнутые элементы будут выпадать из родилтеля 
+      
+        <div class="header-logo">
+          <img src="img/headset.png" alt="logo" width="21" height="20">
+        </div>
+        <div class="box_for_left_inf ">
+            <div class="inf_about_phone">
+                8-800-500-03-03
+            </div>
+            <div class="text">
+                 Круглосуточно, бесплатно по России
+            </div>
+       </div>      
+       <div class="for_name">
+            Александр Александров
+       </div>
+    </div><!-- шапка-->
+      
+    <div class="cabinet-header"><!--ШАПКА -->
+        <div class="abm-page-content"><!-- блок-центровщик-->
+            <div class="holder-content"><!-- флекс-контейнер-->
+                <div class="part-left"><!-- флекс элемент-->
+                    <a class="phone" href="tel:8-800-500-03-03">8-800-500-03-03</a>
+                    <div class="description abm-grey-text">Круглостучно бесплатно по России</div>
+                </div>
+                <div class="part-right"><!-- флекс элемент-->
+                    <div class="">
+                        Давлетова Руфина
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+      
+    <div class="app-content"><!-- ТЕЛО-->
+       <div class="abm-page-content page-content"> <!-- блок -центровщик-->
+        <div class="navbar-wrapper">  
+         <div class="cabinet-navbar">
+            <ul class="navbar-list"><!--, флекс-контенер, li это флекс-элементы menu-->
+              <li class="nav"><a class="nav_link abm-grey-text" href="#">Профиль</a></li><!--  сделали так что эото флекс-элемент является сам флекс контенйером -->
+              <li class="nav"><a  class="nav_link abm-grey-text"  href="#">ОМС</a></li>
+              <li class="nav"><a  class="nav_link abm-grey-text"  href="#">ДМС</a></li>
+              <li class="nav"><a class="nav_link abm-grey-text"   href="#">МЕдицина</a></li>
+              <li class="nav"><a  class="nav_link abm-grey-text"  href="#">Уведомления</a></li>
+            </ul>
+        </div>
+       </div>
+       
+       <h2 class="title">Профиль</h2> 
+       <div class="layout"> <!-- флекс-контенйер, эелементы внем будут флек элементами-->
+          <div class="sidebar-wrapper"> <!-- левое меню- это флекс эоемент-->
+              <div class="cabinet-sidebar">
+                  <div class="item"><a class="item_link abm-grey-text" href="">Личные данные</a></div>
+                  <div class="item"><a class="item_link abm-grey-text" href="">Мои заказы</a></div>
+                  <div class="item"><a class="item_link abm-grey-text" href="">Настройки</a></div>
+                  
+              </div>
+          </div> <!-- левое меню---> 
+          <div class="content"><!--  это флекс эоемент-->
+              <div class="abm-lk-content"> 
+                  <h2 class="title">Личные данные</h2>
+                  <table class="table1">
+                      <tbody> 
+                          <tr>
+                              <td class="abm-grey-text">ФИО</td>
+                              <td class="abm-purple-text">Давлетова Руифна Наркасовна</td>
+                          </tr>
+                          <tr>
+                              <td class="abm-grey-text">EMAIL</td>
+                              <td class="abm-purple-text">rufinka_91@mail.ru</td>
+                          </tr>
+                          <tr>
+                              <td class="abm-grey-text">Номер телефона</td>
+                              <td class="abm-purple-text">8976543452</td>
+                          </tr>
+                          <tr>
+                              <td class="abm-grey-text">Пол</td>
+                              <td class="abm-purple-text">Ж</td>
+                          </tr>
+                          <tr>
+                              <td class="abm-grey-text">Рост</td>
+                              <td class="abm-purple-text">123 см</td>
+                          </tr>
+                          <tr>
+                              <td class="abm-grey-text">Вес</td>
+                              <td class="abm-purple-text">45 кг</td>
+                          </tr>
+                          <tr>
+                              <td class="abm-grey-text">Группа крови</td>
+                              <td class="abm-purple-text">3</td>
+                          </tr>
+                          <tr>
+                              <td class="abm-grey-text">Дата рождения</td>
+                              <td class="abm-purple-text">11.01.1991</td>
+                          </tr>
+                          
+                      </tbody>
+                  </table>
+                  <div class="abm-hr line"></div>
+                  <table class="table2">
+                      <tbody> 
+                          <tr>
+                              <td class="abm-grey-text">Страна</td>
+                              <td class="abm-purple-text">Россия</td>
+                          </tr>
+                          <tr>
+                              <td class="abm-grey-text">Регион</td>
+                              <td class="abm-purple-text">Республика Татарстан</td>
+                          </tr>
+                          <tr>
+                              <td class="abm-grey-text">Город</td>
+                              <td class="abm-purple-text">Казань</td>
+                          </tr>
+                          <tr>
+                              <td class="abm-grey-text">Почтовый индекс</td>
+                              <td class="abm-purple-text">422530</td>
+                          </tr>
+                          <tr>
+                              <td class="abm-grey-text">Улица, номер дома</td>
+                              <td class="abm-purple-text">Лагерная 12</td>
+                          </tr>
+                       </tbody>
+                  </table>
+                  <a href=""><button class="btn button-personal-data-get">Редактировать</button></a> <!--внопка Редактирвоать -->
+              </div><!-- .abm-lk-content-->
+           </div>
+         </div>  <!--.layout -->  
+        </div>   <!--.abm-page-content page-content -->      
+        <div class="cabinet-banners"> <!-- баннеры --> 
+            <div class="abm-page-content"> 
+                <h2 class="title">Рекомендуем</h2>
+            </div>
+            <div class="list"> <!-- список баннеров-->
+             <div class="horizontal_scroll">    
+                <div class="scroll-wrapper">
+                    <div class="scroll-content">
+                     <div class="banners-feed"><!-- флекс-контейнер, сами баннер будут вдек элементами-->
+                        <div class="banners-cards">
+                            <a class="banners" href="#" target="_blank" ></a>
+                            <a class="banners" href="#" target="_blank" ></a>
+                            <a class="banners" href="#" target="_blank" ></a>
+                            <a class="banners" href="#" target="_blank" ></a>
+                            <a class="banners" href="#" target="_blank" ></a>
+                            <a class="banners" href="#" target="_blank" ></a>
+                        </div>
+                    </div>
+                   </div>
+               </div><!-- .scroll-wrapper-->
+               <div class="arrow-wrapper arrow-wrapper-left">  <!--  кнпока Назад, задаем абсолютное позициоинрвоание исдвигаем относительно границ радителя-->
+                  <button class="abm_btn abm-circle-arrow-btn"></button>
+               </div>
+               <div class="arrow-wrapper arrow-wrapper-right">  <!--  кнпока Вперед,задаем абсолютное позициоинрвоание исдвигаем относительно границ радителя-->
+                  <button class="abm_btn abm-circle-arrow-btn"></button>
+               </div>     
+          </div>  <!--horizontal_scroll -->   
+         </div>
+       </div> <!-- .cabinet-banners-->
+       
+       <div class="cabient-footer abm-purple-back">  <!-- Подвал-->
+           <div class="block-up"> <!--верхняя чатсь подвала -->
+               <div class="abm-page-content"> <!-- блок-центровщик-->
+                  <div class="content">
+                      <div class="wrapper-phone"> <!--левая часть-->
+                          <a class="phone abm-white-text" href="tel:8-800-500-03-03">8-800-500-03-03</a>
+                          <div class="description abm-grey-text">Круглосуточный контакт-центр (Звонок по России бесплатный)
+                          </div>
+                      </div>
+                      <div class="socials"><!-- соц сети-->
+                          <a class="abm-social-link abm-vk-link" href="" target="_blank"></a>
+                          <a class="abm-social-link abm-inst-link" href="" target="_blank"></a>
+                          <a class="abm-social-link abm-fb-link" href="" target="_blank"></a>
+                      </div>
+                  </div>
+               </div>
+           </div><!--верхняя чатсь подвала -->
+           <div class="block-main"><!--средняя часть подвала-->
+               <div class="abm-page-content"><!-- блок-центровщик-->
+                  <div class="content"> <!-- флекс контенйер-->
+                      <div class="links-sites"> <!--флекс элемент-->
+                          <a class="link-site" href="" target="_blank"><img src="img/bars-medicine.png"> </a>
+                          <a class="link-site" href="" target="_blank"><img src="img/bars-med.png"> </a>
+                      </div>
+                      <div class="links-other"><!--флекс элемент, но он сам является флекс-контейнером-->
+                          <div class="helpful"> <!--флекс-элемент -->
+                              <h5 class="title abm-white-text "> Полезное</h5>
+                              <ul>
+                                  <li><a class="helpful-link abm-white-text abm-footer-link" href="">Адреса офисов</li>
+                                  <li><a class="helpful-link abm-white-text abm-footer-link" href="">Вопросы и ответы</li>
+                                  <li><a class="helpful-link abm-white-text abm-footer-link" href="">О полисе ОМС</li>
+                                  <li><a class="helpful-link abm-white-text abm-footer-link" href="">Новости</li>
+                              </ul>
+                          </div>
+                          <div class="contacts"><!--флекс-элемент -->
+                             <h5 class="title abm-white-text"> Контакты</h5>
+                             <div class="contact abm-white-text">420107, Татарстан, г. Казань,<br> ул. Островского, д. 38, 3-й этаж
+                             </div>
+                             <div class="mobile-apps">
+                                 <a class="abm-app-link" href="#">
+                                     <img src="img/gpnotdark.png" width="167" height="48">
+                                 </a>
+                                 <a class="abm-app-link" href="#"> 
+                                     <img src="img/bitmap_notdark.png" width="167" height="48">
+                                 </a>
+                             </div>
+                          </div>
+                      </div>
+                  </div>
+               </div>
+           </div><!--средняя часть подвала-->
+               
+           <div class="block-down"><!--нижняячасть подвал -->
+               <div class="abm-page-content"><!--блок-центровщик -->
+                  <div class="content"><!-- флекс-контейнер-->
+                      <div class="license abm-grey-text">
+                          © 2005 - 2019 ООО "Страховая компания «АК БАРС-Мед»
+                          <br> Лицензии ОС № 3943-01 от 20 декабря 2016 года, СЛ № 3943 от 20 декабря 2016 года 
+                      </div>
+                      <a  class="abm-grey-text" href="#">Политика конфиденциальности </a>
+                 </div>
+               </div>
+           </div>
+       </div>
+
+      
+     
+      
+      
+      
+      
+      
+      
+      
+
+  </body>
+</html>
